@@ -1,23 +1,25 @@
 {
-  "window.zoomLevel": -0.5,
-  "oneDarkPro.editorTheme": "One Dark Pro Darker",
-
+  "window.zoomLevel": -0.4,
+  "workbench.activityBar.visible": true, // Ativa e desativa a Bar de extenções e files
+  "workbench.sideBar.location": "right", // Adiciona a Barra de Files a direita
+  "editor.minimap.enabled": false, // Remove o minimap a direita do VSCode
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontSize": 14,
   "editor.lineHeight": 20,
-  "editor.rulers": [80, 120],
+  "editor.rulers": [
+    80,
+    120
+  ],
   "editor.wordWrap": "on",
   "editor.tabSize": 2,
   "editor.renderLineHighlight": "gutter",
-  "editor.parameterHints.cycle.enable": false,
   "editor.inlineSuggest.enabled": true,
   "editor.formatOnSave": true,
+  "explorer.compactFolders": false,
   "editor.codeActionsOnSave": {
-
     "source.fixAll": true,
     "source.organizeImports": true
   },
-
   "files.trimTrailingWhitespace": true,
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
@@ -27,14 +29,12 @@
     "**/node_modules": true,
     "**/package-lock.json": true
   },
-
   "emmet.syntaxProfiles": {
     "javascript": "jsx"
   },
   "workbench.startupEditor": "newUntitledFile",
   "javascript.suggest.autoImports": true,
   "javascript.updateImportsOnFileMove.enabled": "always",
-
   "extensions.ignoreRecommendations": true,
   "typescript.tsserver.log": "off",
   "files.associations": {
@@ -44,28 +44,22 @@
     ".env.*": "dotenv",
     ".prettierrc": "json"
   },
-
   "material-icon-theme.activeIconPack": "nest",
   "editor.suggestSelection": "first",
   "explorer.confirmDelete": false,
-  "gitlens.codeLens.recentChange.enabled": false,
   "terminal.integrated.showExitAlert": false,
-
   "[prisma]": {
     "editor.formatOnSave": true
   },
-
   "typescript.suggest.autoImports": true,
   "terminal.integrated.env.osx": {
     "FIG_NEW_SESSION": "1"
   },
-
   "workbench.editor.labelFormat": "short",
   "editor.fontLigatures": true,
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
   },
-
   "cSpell.enableFiletypes": [
     "!asciidoc",
     "!c",
@@ -86,14 +80,10 @@
     "!scala",
     "!scss"
   ],
-
-  "workbench.colorTheme": "Bearded Theme Will",
-  "workbench.iconTheme": "material-icon-theme"
-
-},
-
+  "workbench.colorTheme": "Monokai Pro",
+  "workbench.iconTheme": "symbols"
+}
 //Python settings
-
 {
   "python.languageServer": "Pylance", // ms-python.vscode-pylance
   "python.testing.unittestEnabled": false, // ms-python.python
@@ -105,7 +95,9 @@
     "--load-plugins=pylint_django",
     "--errors-only"
   ],
-  "python.formatting.autopep8Args": ["--indent-size=4"],
+  "python.formatting.autopep8Args": [
+    "--indent-size=4"
+  ],
   "python.defaultInterpreterPath": "venv/bin/python",
   "[python]": {
     "editor.defaultFormatter": "ms-python.python", // ms-python.python
@@ -153,65 +145,3 @@
     "typescript": "typescriptreact"
   }
 }
-
-
-{
-  "python.languageServer": "Pylance", // ms-python.vscode-pylance
-  "python.testing.unittestEnabled": false, // ms-python.python
-  "python.testing.pytestEnabled": true,
-  "python.testing.pytestArgs": [], // -x to bail
-  "python.linting.flake8Enabled": true,
-  "python.linting.mypyEnabled": true,
-  "python.linting.pylintArgs": [
-    "--load-plugins=pylint_django",
-    "--errors-only"
-  ],
-  "python.formatting.autopep8Args": ["--indent-size=4"],
-  "python.defaultInterpreterPath": "venv/bin/python",
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.python", // ms-python.python
-    "editor.tabSize": 4,
-    "editor.insertSpaces": true,
-    "editor.formatOnSave": true,
-    "editor.formatOnType": true,
-    "editor.codeActionsOnSave": {
-      "source.organizeImports": true
-    }
-  },
-  "[html]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "vscode.html-language-features",
-    "editor.quickSuggestions": {
-      "other": true,
-      "comments": true,
-      "strings": true
-    }
-  },
-  "[django-html]": {
-    "editor.formatOnSave": false,
-    "editor.defaultFormatter": "vscode.html-language-features",
-    "editor.quickSuggestions": {
-      "other": true,
-      "comments": true,
-      "strings": true
-    }
-  },
-  "files.associations": {
-    "*.js": "javascript",
-    "*.jsx": "javascriptreact",
-    "*.xml": "html",
-    "*.svg": "html",
-    "*.html": "html",
-    "django-html": "html", // batisteo.vscode-django
-    "**/*.html": "html",
-    "**/templates/**/*.html": "django-html",
-    "**/base_templates/**/*.html": "django-html",
-    "**/requirements{/**,*}.{txt,in}": "pip-requirements"
-  },
-  "emmet.includeLanguages": {
-    "django-html": "html", // batisteo.vscode-django
-    "javascript": "javascriptreact",
-    "typescript": "typescriptreact"
-  }
-}
-
