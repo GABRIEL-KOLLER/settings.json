@@ -1,7 +1,7 @@
 {
-  "window.zoomLevel": -0.4,
+  "window.zoomLevel": 0,
   "workbench.activityBar.visible": true, // Ativa e desativa a Bar de extenções e files
-  "workbench.sideBar.location": "right", // Adiciona a Barra de Files a direita
+  "workbench.sideBar.location": "left", // Adiciona a Barra de Files a direita
   "editor.minimap.enabled": false, // Remove o minimap a direita do VSCode
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontSize": 14,
